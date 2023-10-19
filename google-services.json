@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "779944857922",
+    "project_id": "paws-f2d34",
+    "storage_bucket": "paws-f2d34.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:779944857922:android:a8af9e834213249fb138db",
+        "android_client_info": {
+          "package_name": "co.edu.paws"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDzMscKyxUi6Pm0S4xKLzBl4J2ZW-nlQPk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
