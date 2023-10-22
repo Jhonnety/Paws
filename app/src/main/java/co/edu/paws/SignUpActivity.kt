@@ -4,6 +4,7 @@ package co.edu.paws
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 
 import android.widget.Button
 import android.widget.EditText
@@ -87,8 +88,14 @@ class SignUpActivity : AppCompatActivity() {
                                                 Toast.makeText(baseContext,e.toString(),Toast.LENGTH_SHORT,).show()
                                             }
                                     }
-                                } else {
-                                    Toast.makeText(baseContext,"Authentication failed.",Toast.LENGTH_SHORT,).show()
+                                }
+                            }
+                            .addOnFailureListener { e ->
+                                if(e.toString() == "com.google.firebase.auth.FirebaseAuthUserCollisionException: The email address is already in use by another account."){
+                                    Toast.makeText(baseContext, "The email is already associated with an account.", Toast.LENGTH_SHORT,).show()
+                                }
+                                else{
+                                    Toast.makeText(baseContext, e.toString(), Toast.LENGTH_SHORT,).show()
                                 }
                             }
                     }else{

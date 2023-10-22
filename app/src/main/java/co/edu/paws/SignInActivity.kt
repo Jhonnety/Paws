@@ -9,12 +9,15 @@ import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
 
 class SignInActivity : AppCompatActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_sign_in)
 
         val btnSignUp = this.findViewById<Button>(R.id.btnSignUp)
         val btnSignIn = this.findViewById<Button>(R.id.btnSignIn)
+        val btnSignInGoogle = this.findViewById<Button>(R.id.btnSignInGoogle)
+
 
         btnSignUp.setOnClickListener{
             val intent = Intent(this, SignUpActivity::class.java)
@@ -23,7 +26,15 @@ class SignInActivity : AppCompatActivity() {
         btnSignIn.setOnClickListener{
             signIn()
         }
+        btnSignInGoogle.setOnClickListener{
+            signInGoogle()
+        }
     }
+
+    fun signInGoogle() {
+
+    }
+
 
 
     fun signIn(){
