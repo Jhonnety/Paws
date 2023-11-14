@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/fondo10"
+    tools:context=".AddPetActivity">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/fondo10"
+    tools:context=".AddPetActivity">
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.94" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.06" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="New pet"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="50dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/guideline17"
+        app:layout_constraintEnd_toStartOf="@+id/guideline15"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline16"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.24" />
+
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:text="What is the name of your pet?"
+        android:textColor="#3A322F"
+
+        android:textSize="24dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/guideline15"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline16"
+        app:layout_constraintTop_toTopOf="@+id/guideline17"></TextView>
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="What is the breed of your pet?"
+        android:textColor="#3A322F"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/guideline15"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline16"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"></TextView>
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="What is the wight of your pet?"
+        android:textColor="#3A322F"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        android:layout_marginTop="25dp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline15"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline16"
+        app:layout_constraintTop_toBottomOf="@+id/editTextFeatures"></TextView>
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="What is the behavior of your pet?"
+        android:textColor="#3A322F"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        android:maxLines="1"
+        app:layout_constraintEnd_toStartOf="@+id/guideline15"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline16"
+        app:layout_constraintTop_toBottomOf="@+id/editTextBreed"></TextView>
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="0dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="5dp"
+        android:backgroundTint="#FDA216"
+        android:drawableStart="@drawable/shield_dog_solid"
+        android:drawablePadding="8dp"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="text"
+        android:paddingHorizontal="20dp"
+        android:textColor="#3A322F"
+        android:textColorHint="#3A322F"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline15"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline16"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        tools:ignore="MissingConstraints" />
+
+
+    <EditText
+        android:id="@+id/editTextBreed"
+        android:layout_width="0dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="5dp"
+        android:backgroundTint="#FDA216"
+        android:drawableStart="@drawable/shield_cat_solid"
+        android:drawablePadding="8dp"
+        android:ems="10"
+        android:hint="Breed"
+        android:inputType="text"
+        android:paddingHorizontal="20dp"
+        android:textColor="#3A322F"
+        android:textColorHint="#3A322F"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline15"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline16"
+        app:layout_constraintTop_toBottomOf="@+id/textView8"
+        android:maxLines="1"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/editTextWeigth"
+        android:layout_width="0dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="5dp"
+        android:backgroundTint="#FDA216"
+        android:drawableStart="@drawable/shield_cat_solid"
+        android:drawablePadding="8dp"
+        android:ems="10"
+        android:hint="Weigth Kg"
+        android:inputType="number"
+        android:maxLines="1"
+        android:paddingHorizontal="20dp"
+        android:textColor="#3A322F"
+        android:textColorHint="#3A322F"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline15"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline16"
+        app:layout_constraintTop_toBottomOf="@+id/textView7"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/editTextFeatures"
+        android:layout_width="0dp"
+        android:layout_height="156dp"
+        android:layout_marginTop="5dp"
+        android:backgroundTint="#FDA216"
+        android:drawableStart="@drawable/shield_cat_solid"
+        android:drawablePadding="8dp"
+        android:ems="10"
+        android:hint="Features"
+        android:inputType="textMultiLine"
+        android:maxLines="5"
+        android:paddingHorizontal="20dp"
+        android:textColor="#3A322F"
+        android:textColorHint="#3A322F"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline15"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline16"
+        app:layout_constraintTop_toBottomOf="@+id/textView9"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="What pet do you have?"
+
+        android:textColor="#3A322F"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/guideline15"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline16"
+        app:layout_constraintTop_toBottomOf="@+id/editTextName"></TextView>
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+
+        android:text="When your pet was born"
+        android:textColor="#3A322F"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/guideline15"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline16"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerPet"></TextView>
+
+
+    <Spinner
+        android:id="@+id/spinnerPet"
+        android:layout_width="0dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="5dp"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toStartOf="@+id/guideline15"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline16"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:paddingHorizontal="10dp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline15"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="@+id/guideline16"
+        app:layout_constraintTop_toBottomOf="@+id/textView5">
+
+        <EditText
+            android:id="@+id/editTextDay"
+            android:layout_width="0dp"
+            android:layout_height="52dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="2"
+            android:backgroundTint="#FDA216"
+            android:ems="10"
+            android:hint="Day"
+            android:inputType="number"
+            android:maxLength="2"
+            android:textAlignment="center"
+            app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="0dp"
+            android:layout_height="52dp"
+            android:layout_marginTop="16dp"
+            android:layout_weight="1"
+            android:text="/"
+            android:textAlignment="center"
+            android:textColor="#3A322F"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@+id/textView5"></TextView>
+
+        <EditText
+            android:id="@+id/editTextMonth"
+            android:layout_width="0dp"
+            android:layout_height="52dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="2"
+            android:backgroundTint="#FDA216"
+            android:ems="10"
+            android:hint="Month"
+            android:inputType="number"
+            android:maxLength="2"
+            android:textAlignment="center"
+            app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="0dp"
+            android:layout_height="52dp"
+            android:layout_marginTop="16dp"
+            android:layout_weight="1"
+            android:text="/"
+            android:textAlignment="center"
+            android:textColor="#3A322F"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@+id/textView5"></TextView>
+
+        <EditText
+            android:id="@+id/editTextYear"
+            android:layout_width="0dp"
+            android:layout_height="52dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="2"
+            android:backgroundTint="#FDA216"
+            android:ems="10"
+            android:hint="Year"
+            android:inputType="number"
+            android:maxLength="4"
+            android:textAlignment="center"
+            app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/btnSavePet"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:text="Save pet"
+        android:textSize="32dp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline15"
+        app:layout_constraintStart_toStartOf="@+id/guideline16"
+        app:layout_constraintTop_toBottomOf="@+id/editTextWeigth"></Button>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
