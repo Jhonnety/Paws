@@ -76,19 +76,30 @@ class MainActivity : AppCompatActivity() {
 
                     for (document in documents) {
 
+                        val idPet = document.id
                         val name = document.getString("name").toString()
                         val type = document.getString("type").toString()
                         val weigth = document.getString("weigth").toString()
-                        val idPet = document.id
+                        val owner = document.getString("owner").toString()
+                        val day = document.getString("day").toString()
+                        val month = document.getString("month").toString()
+                        val year = document.getString("year").toString()
+                        val breed = document.getString("breed").toString()
+                        val features = document.getString("features").toString()
 
 
                         if(name != null && type !=null && id != null){
-                            val pet = Pet(idPet ,name, type, weigth)
+                            val pet = Pet(idPet,owner, name, type, day, month, year, breed, features,  weigth)
                             petList.add(pet)
                         }
 
                         val adapter = AdapterListPet(this,petList)
                         listViewPet.adapter = adapter
+                        listViewPet.setOnItemClickListener{ parent, view, position, id ->
+                            val intent = Intent(this, PetInfo::class.java)
+                            intent.putExtra("pet",petList[position])
+                            startActivity(intent)
+                        }
                     }
                 }
                 .addOnFailureListener { exception ->

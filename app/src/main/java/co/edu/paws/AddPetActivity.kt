@@ -56,8 +56,12 @@ class AddPetActivity : AppCompatActivity() {
                 Toast.makeText(this, "Please, fill all fields up", Toast.LENGTH_LONG).show()
             }
             else{
+                if(day.length <2 || month.length < 2 || year.length < 4){
+                    Toast.makeText(this, "Please, check the date", Toast.LENGTH_LONG).show()
+                }
+                else{
                 val user = FirebaseAuth.getInstance().currentUser
-                if(user != null){
+                if(user != null) {
                     val db = Firebase.firestore
 
                     val new_pet = hashMapOf(
@@ -76,13 +80,18 @@ class AddPetActivity : AppCompatActivity() {
                         .document()
                         .set(new_pet)
                         .addOnSuccessListener {
-                            Toast.makeText(baseContext,"Pet successfully saved",Toast.LENGTH_SHORT,).show()
+                            Toast.makeText(
+                                baseContext,
+                                "Pet successfully saved",
+                                Toast.LENGTH_SHORT,
+                            ).show()
                             val intent = Intent(this, MainActivity::class.java)
                             startActivity(intent)
                         }
                         .addOnFailureListener { e ->
-                            Toast.makeText(baseContext,e.toString(),Toast.LENGTH_SHORT,).show()
+                            Toast.makeText(baseContext, e.toString(), Toast.LENGTH_SHORT,).show()
                         }
+                }
                 }
             }
         }

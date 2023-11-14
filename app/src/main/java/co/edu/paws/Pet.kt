@@ -1,5 +1,15 @@
 package co.edu.paws
 
-class Pet(val id : String, val name : String, val type : String, val weigth : String) {
+import java.io.Serializable
 
-}
+class Pet(val id : String,
+          val owner :String,
+          val name : String,
+          val type : String,
+          val day : String,
+          val month : String,
+          val year : String,
+          val breed : String,
+          val features : String,
+          val weigth : String) : Serializable
+
