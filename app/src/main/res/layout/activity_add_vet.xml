@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo10"
+    tools:context=".AddVaccineActivity">
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.06" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.94" />
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="New trusted"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="36dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textViewName"
+        app:layout_constraintEnd_toStartOf="@+id/guideline26"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline25" />
+
+    <TextView
+        android:id="@+id/textViewName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Vet"
+        android:textAlignment="center"
+        android:textColor="#3A322F"
+        android:textSize="42dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/guideline28"
+        app:layout_constraintEnd_toStartOf="@+id/guideline26"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline25"
+
+        app:layout_constraintVertical_bias="0.815" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline28"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.2" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline29"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.28" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline26"
+        app:layout_constraintStart_toStartOf="@+id/guideline25"
+        app:layout_constraintTop_toTopOf="@+id/guideline29">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="What is the name of the vet?"
+                android:textColor="#3A322F"
+                android:layout_marginTop="25dp"
+                android:textSize="24dp"
+                android:textStyle="bold"></TextView>
+
+            <EditText
+                android:id="@+id/editTextName"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:backgroundTint="#FDA216"
+                android:drawableStart="@drawable/user_doctor_solid3"
+                android:drawablePadding="8dp"
+                android:ems="10"
+                android:hint="Name..."
+                android:inputType="text"
+                android:paddingHorizontal="20dp"
+                android:textColor="#3A322F"
+                android:textColorHint="#3A322F"
+                android:textSize="24dp"
+                android:layout_marginTop="5dp"
+                android:maxLines="1"
+                app:layout_constraintEnd_toStartOf="@+id/guideline26"
+                app:layout_constraintStart_toStartOf="@+id/guideline25"
+                app:layout_constraintTop_toBottomOf="@+id/textView14"
+                tools:ignore="MissingConstraints" />
+
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Select the gender"
+                android:textColor="#3A322F"
+                android:layout_marginTop="25dp"
+                android:textSize="24dp"
+                android:textStyle="bold"></TextView>
+
+            <Spinner
+                android:id="@+id/spinnerGender"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="5dp"
+                android:textAlignment="center" />
+
+
+
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Contact number"
+                android:textColor="#3A322F"
+                android:layout_marginTop="25dp"
+                android:textSize="24dp"
+                android:textStyle="bold"></TextView>
+
+            <EditText
+                android:id="@+id/editTextNumber"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:backgroundTint="#FDA216"
+                android:drawableStart="@drawable/phone_solid"
+                android:drawablePadding="8dp"
+                android:ems="10"
+                android:hint="Number..."
+                android:inputType="text"
+                android:paddingHorizontal="20dp"
+                android:textColor="#3A322F"
+                android:textColorHint="#3A322F"
+                android:textSize="24dp"
+                android:maxLines="1"
+                android:layout_marginTop="5dp"
+                app:layout_constraintEnd_toStartOf="@+id/guideline26"
+                app:layout_constraintStart_toStartOf="@+id/guideline25"
+                app:layout_constraintTop_toBottomOf="@+id/textView14"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Address"
+                android:textColor="#3A322F"
+                android:layout_marginTop="25dp"
+                android:textSize="24dp"
+                android:textStyle="bold"></TextView>
+
+            <EditText
+                android:id="@+id/editTextAddress"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:backgroundTint="#FDA216"
+                android:drawableStart="@drawable/location_dot_solid"
+                android:drawablePadding="8dp"
+                android:ems="10"
+                android:hint="Veterinarian address..."
+                android:inputType="text"
+                android:paddingHorizontal="20dp"
+                android:textColor="#3A322F"
+                android:textColorHint="#3A322F"
+                android:textSize="24dp"
+                android:maxLines="1"
+                android:layout_marginTop="5dp"
+                app:layout_constraintEnd_toStartOf="@+id/guideline26"
+                app:layout_constraintStart_toStartOf="@+id/guideline25"
+                app:layout_constraintTop_toBottomOf="@+id/textView14"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                android:textColor="#3A322F"
+                android:layout_marginTop="25dp"
+                android:textSize="24dp"
+                android:textStyle="bold"></TextView>
+
+            <EditText
+                android:id="@+id/editTextEmail"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:backgroundTint="#FDA216"
+                android:drawableStart="@drawable/envelope_solid2"
+                android:drawablePadding="8dp"
+                android:ems="10"
+                android:hint="Veterinarian address..."
+                android:inputType="text"
+                android:paddingHorizontal="20dp"
+                android:textColor="#3A322F"
+                android:textColorHint="#3A322F"
+                android:textSize="24dp"
+                android:maxLines="1"
+                android:layout_marginTop="5dp"
+                app:layout_constraintEnd_toStartOf="@+id/guideline26"
+                app:layout_constraintStart_toStartOf="@+id/guideline25"
+                app:layout_constraintTop_toBottomOf="@+id/textView14"
+                tools:ignore="MissingConstraints" />
+
+            <Button
+                android:id="@+id/btnSaveVet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="25dp"
+                android:text="Save vet"></Button>
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

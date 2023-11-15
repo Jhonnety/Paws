@@ -159,8 +159,58 @@
                     android:textColor="#3A322F"
                     ></TextView>
             </LinearLayout>
-
-
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:textSize="24dp"
+                    android:layout_height="wrap_content"
+                    android:text="Last vaccine:"
+                    android:textColor="#3A322F"
+                    android:textStyle="bold"
+                    ></TextView>
+                <TextView
+                    android:id="@+id/textViewLastVaccine"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:textSize="24dp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="#3A322F"
+                    ></TextView>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:textSize="24dp"
+                    android:layout_height="wrap_content"
+                    android:text="Last medical visit:"
+                    android:textColor="#3A322F"
+                    android:textStyle="bold"
+                    ></TextView>
+                <TextView
+                    android:id="@+id/textViewLastVisit"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:textSize="24dp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="#3A322F"
+                    ></TextView>
+            </LinearLayout>
             <Button
                 android:id="@+id/btnVaccines"
                 android:layout_width="match_parent"
@@ -173,9 +223,18 @@
                 android:id="@+id/btnVisits"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Medical visit"
+                android:text="Medical visits"
                 android:layout_marginTop="25dp"
                 android:textSize="24dp"
+                ></Button>
+            <Button
+                android:id="@+id/btnDetele"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Delete pet"
+                android:layout_marginTop="25dp"
+                android:textSize="24dp"
+                android:backgroundTint="#3A322F"
                 ></Button>
         </LinearLayout>
     </ScrollView>
@@ -192,7 +251,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.06" />
+        app:layout_constraintGuide_percent="0.04" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline23"

@@ -91,7 +91,7 @@ class AddPetActivity : AppCompatActivity() {
                         .addOnFailureListener { e ->
                             Toast.makeText(baseContext, e.toString(), Toast.LENGTH_SHORT,).show()
                         }
-                }
+                    }
                 }
             }
         }

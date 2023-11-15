@@ -2,7 +2,7 @@ package co.edu.paws
 
 import java.io.Serializable
 
-class Pet(val id : String,
+class Pet(val pet_id : String,
           val owner :String,
           val name : String,
           val type : String,

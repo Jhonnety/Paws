@@ -20,6 +20,7 @@ class MainActivity : AppCompatActivity() {
 
         val buttonSignOut = findViewById<Button>(R.id.buttonSignOut)
         val buttonNewPet = findViewById<Button>(R.id.buttonNewPet)
+        val buttonActivities = findViewById<Button>(R.id.buttonActivities)
 
         buttonSignOut.setOnClickListener(){
             val auth = FirebaseAuth.getInstance()
@@ -31,6 +32,11 @@ class MainActivity : AppCompatActivity() {
 
         buttonNewPet.setOnClickListener(){
             val intent = Intent(this, AddPetActivity::class.java)
+            startActivity(intent)
+        }
+
+        buttonActivities.setOnClickListener{
+            val intent = Intent(this, ActivitiesActivity::class.java)
             startActivity(intent)
         }
     }

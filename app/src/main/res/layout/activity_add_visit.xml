@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo10"
+    tools:context=".AddVisitActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.06" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.94" />
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="New visit for"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="36dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textViewName"
+        app:layout_constraintEnd_toStartOf="@+id/guideline26"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline25" />
+
+    <TextView
+        android:id="@+id/textViewName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="PET"
+        android:textAlignment="center"
+        android:textColor="#3A322F"
+        android:textSize="42dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/guideline28"
+        app:layout_constraintEnd_toStartOf="@+id/guideline26"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline25"
+
+        app:layout_constraintVertical_bias="0.815" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline28"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.2" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline29"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.28" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline26"
+        app:layout_constraintStart_toStartOf="@+id/guideline25"
+        app:layout_constraintTop_toTopOf="@+id/guideline29">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="What was the reason for the visit?"
+                android:textColor="#3A322F"
+                android:layout_marginTop="25dp"
+                android:textSize="24dp"
+                android:textStyle="bold"></TextView>
+
+            <EditText
+                android:id="@+id/editTextReason"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:backgroundTint="#FDA216"
+                android:drawableStart="@drawable/hand_holding_medical_solid"
+                android:drawablePadding="8dp"
+                android:ems="10"
+                android:hint="Reason..."
+                android:inputType="text"
+                android:paddingHorizontal="20dp"
+                android:textColor="#3A322F"
+                android:textColorHint="#3A322F"
+                android:textSize="24dp"
+                android:layout_marginTop="5dp"
+                android:maxLines="1"
+                app:layout_constraintEnd_toStartOf="@+id/guideline26"
+                app:layout_constraintStart_toStartOf="@+id/guideline25"
+                app:layout_constraintTop_toBottomOf="@+id/textView14"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="What was the date of the visit?"
+                android:textColor="#3A322F"
+                android:layout_marginTop="25dp"
+                android:textSize="24dp"
+                android:textStyle="bold"></TextView>
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:paddingHorizontal="10dp">
+
+                <EditText
+                    android:id="@+id/editTextDay"
+                    android:layout_width="0dp"
+                    android:layout_height="52dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="2"
+                    android:backgroundTint="#FDA216"
+                    android:ems="10"
+                    android:hint="DD"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:textAlignment="center"
+                    app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="0dp"
+                    android:layout_height="52dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_weight="1"
+                    android:text="/"
+                    android:textAlignment="center"
+                    android:textColor="#3A322F"
+                    android:textSize="24dp"
+                    android:textStyle="bold"
+                    app:layout_constraintTop_toBottomOf="@+id/textView5"></TextView>
+
+                <EditText
+                    android:id="@+id/editTextMonth"
+                    android:layout_width="0dp"
+                    android:layout_height="52dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="2"
+                    android:backgroundTint="#FDA216"
+                    android:ems="10"
+                    android:hint="MM"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:textAlignment="center"
+                    app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="0dp"
+                    android:layout_height="52dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_weight="1"
+                    android:text="/"
+                    android:textAlignment="center"
+                    android:textColor="#3A322F"
+                    android:textSize="24dp"
+                    android:textStyle="bold"
+                    app:layout_constraintTop_toBottomOf="@+id/textView5"></TextView>
+
+                <EditText
+                    android:id="@+id/editTextYear"
+                    android:layout_width="0dp"
+                    android:layout_height="52dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="2"
+                    android:backgroundTint="#FDA216"
+                    android:ems="10"
+                    android:hint="YYYY"
+                    android:inputType="number"
+                    android:maxLength="4"
+                    android:textAlignment="center"
+                    app:layout_constraintTop_toBottomOf="@+id/textView5" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="What was the weight of the pet? (Optional)"
+                android:textColor="#3A322F"
+                android:layout_marginTop="25dp"
+                android:textSize="24dp"
+                android:textStyle="bold"></TextView>
+
+            <EditText
+                android:id="@+id/editTextWeight"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:backgroundTint="#FDA216"
+                android:drawableStart="@drawable/shield_cat_solid"
+                android:drawablePadding="8dp"
+                android:ems="10"
+                android:hint="weight (Kg)"
+                android:inputType="text"
+                android:paddingHorizontal="20dp"
+                android:textColor="#3A322F"
+                android:textColorHint="#3A322F"
+                android:textSize="24dp"
+                android:maxLines="1"
+                android:layout_marginTop="5dp"
+                app:layout_constraintEnd_toStartOf="@+id/guideline26"
+                app:layout_constraintStart_toStartOf="@+id/guideline25"
+                app:layout_constraintTop_toBottomOf="@+id/textView14"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="What was the prescribed medication? (Optional)"
+                android:textColor="#3A322F"
+                android:layout_marginTop="25dp"
+                android:textSize="24dp"
+                android:textStyle="bold"></TextView>
+
+            <EditText
+                android:id="@+id/editTextMedication"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:backgroundTint="#FDA216"
+                android:drawableStart="@drawable/flask_solid"
+                android:drawablePadding="8dp"
+                android:ems="10"
+                android:hint="Medication..."
+                android:inputType="text"
+                android:paddingHorizontal="20dp"
+                android:textColor="#3A322F"
+                android:textColorHint="#3A322F"
+                android:textSize="24dp"
+                android:maxLines="1"
+                android:layout_marginTop="5dp"
+                app:layout_constraintEnd_toStartOf="@+id/guideline26"
+                app:layout_constraintStart_toStartOf="@+id/guideline25"
+                app:layout_constraintTop_toBottomOf="@+id/textView14"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Note / Description (Optional)"
+                android:textColor="#3A322F"
+                android:layout_marginTop="25dp"
+                android:textSize="24dp"
+                android:textStyle="bold"></TextView>
+
+            <EditText
+                android:id="@+id/editTextNote"
+                android:layout_width="match_parent"
+                android:layout_height="156dp"
+                android:backgroundTint="#FDA216"
+                android:drawableStart="@drawable/heart_pulse_solid"
+                android:drawablePadding="8dp"
+                android:ems="10"
+                android:hint="Note..."
+                android:inputType="text"
+                android:textColor="#3A322F"
+                android:textColorHint="#3A322F"
+                android:textSize="24dp"
+                android:paddingHorizontal="20dp"
+                android:maxLines="5"
+                android:layout_marginTop="5dp"
+                app:layout_constraintEnd_toStartOf="@+id/guideline26"
+                app:layout_constraintStart_toStartOf="@+id/guideline25"
+                app:layout_constraintTop_toBottomOf="@+id/textView14"
+                tools:ignore="MissingConstraints" />
+
+
+            <Button
+                android:id="@+id/btnSaveVisit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start|top"
+                android:textSize="24dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="25dp"
+                android:text="Save visit"></Button>
+        </LinearLayout>
+
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
