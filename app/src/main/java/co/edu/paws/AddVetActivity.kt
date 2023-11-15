@@ -51,7 +51,7 @@ class AddVetActivity : AppCompatActivity() {
                     val db = Firebase.firestore
 
                     val new_vet = hashMapOf(
-                        "owner_contact" to user.uid,
+                        "owner_id" to user.uid,
                         "name" to name,
                         "gender" to genderSelected.toString(),
                         "number" to number,
