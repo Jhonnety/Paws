@@ -14,4 +14,4 @@ class Event (val event_id : String,
              val year : String,
              val hour : String,
              val minutes : String,
-             val period : String,)
+             val period : String,): Serializable

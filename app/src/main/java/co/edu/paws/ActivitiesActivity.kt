@@ -12,6 +12,7 @@ class ActivitiesActivity : AppCompatActivity() {
 
         val btnVets = findViewById<Button>(R.id.btnVets)
         val btnEvents = findViewById<Button>(R.id.btnEvents)
+        val btnBreeds = findViewById<Button>(R.id.btnBreeds)
 
 
         btnVets.setOnClickListener{
@@ -20,6 +21,10 @@ class ActivitiesActivity : AppCompatActivity() {
         }
         btnEvents.setOnClickListener{
             val intent = Intent(this, EventsActivity::class.java)
+            startActivity(intent)
+        }
+        btnBreeds.setOnClickListener{
+            val intent = Intent(this, BreedsActivity::class.java)
             startActivity(intent)
         }
     }

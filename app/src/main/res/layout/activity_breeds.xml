@@ -21,15 +21,30 @@
         android:orientation="vertical"
         app:layout_constraintGuide_percent="0.94" />
 
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="Breeds"
+        android:textColor="#3A322F"
+        android:layout_marginTop="25dp"
+        android:textSize="32dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/guideline35"
+        app:layout_constraintStart_toStartOf="@+id/guideline34"
+        app:layout_constraintTop_toTopOf="@+id/guideline36"></TextView>
+
+
     <ScrollView
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
         android:layout_marginBottom="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/guideline35"
         app:layout_constraintStart_toStartOf="@+id/guideline34"
-        app:layout_constraintTop_toBottomOf="@+id/guideline36">
+        app:layout_constraintTop_toBottomOf="@+id/text1">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -44,21 +59,20 @@
                 android:layout_weight="1">
 
                 <Button
-                    android:id="@+id/btnVets"
+                    android:id="@+id/btnDogs"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:drawableTop="@drawable/user_doctor_solid"
+                    android:drawableTop="@drawable/dog_solid2"
                     android:paddingVertical="10dp"
-                    android:text="Trusted vets"
+                    android:text="Dogs"
                     android:textSize="16dp"></Button>
 
                 <Button
-                    android:id="@+id/btnBreeds"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="25dp"
                     android:paddingVertical="10dp"
-                    android:text="Breeds"
+                    android:text="Cats"
                     android:backgroundTint="#FDA216"
                     android:drawableTop="@drawable/cat_solid"
                     android:textSize="16dp"></Button>
@@ -68,9 +82,9 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="25dp"
                     android:paddingVertical="10dp"
-                    android:text="Friends"
+                    android:text="Cow"
                     android:backgroundTint="#3A322F"
-                    android:drawableTop="@drawable/handshake_regular"
+                    android:drawableTop="@drawable/cow_solid"
                     android:textSize="16dp"></Button>
 
             </LinearLayout>
@@ -89,9 +103,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:paddingVertical="10dp"
-                    android:text="Events"
+                    android:text="Horse"
                     android:backgroundTint="#3A322F"
-                    android:drawableTop="@drawable/cake_candles_solid"
+                    android:drawableTop="@drawable/horse_solid"
                     android:textSize="16dp"></Button>
 
                 <Button
@@ -99,8 +113,8 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="25dp"
                     android:paddingVertical="10dp"
-                    android:text="Reminders"
-                    android:drawableTop="@drawable/clock_solid"
+                    android:text="Frogs"
+                    android:drawableTop="@drawable/frog_solid"
                     android:textSize="16dp"></Button>
 
                 <Button
@@ -108,9 +122,9 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="25dp"
                     android:paddingVertical="10dp"
-                    android:text="Shop"
+                    android:text="Rats"
                     android:backgroundTint="#FDA216"
-                    android:drawableTop="@drawable/shop_solid"
+                    android:drawableTop="@drawable/otter_solid"
                     android:textSize="16dp"></Button>
 
             </LinearLayout>

@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DogInfo">
+
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline42"
+        app:layout_constraintStart_toStartOf="@+id/guideline41"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:minHeight="300dp" />
+
+            <TextView
+                android:id="@+id/textViewBreed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="Breed"
+                android:textSize="32dp"
+                android:textAlignment="center"
+                android:textColor="#FDA216"
+                android:layout_weight="1"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:id="@+id/textViewDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:textSize="20dp"
+                android:textColor="#3A322F"
+                android:text="Description"
+                android:layout_weight="1"
+                android:inputType="textMultiLine"
+                android:paddingHorizontal="20dp"></TextView>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:textSize="24dp"
+                    android:layout_height="wrap_content"
+                    android:text="Size:"
+                    android:textColor="#3A322F"
+                    android:textStyle="bold"
+                    ></TextView>
+                <TextView
+                    android:id="@+id/textViewSize"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:textSize="24dp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="#3A322F"
+                    ></TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:textSize="24dp"
+                    android:layout_height="wrap_content"
+                    android:text="Height:"
+                    android:textColor="#3A322F"
+                    android:textStyle="bold"
+                    ></TextView>
+                <TextView
+                    android:id="@+id/textViewHeight"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:textSize="24dp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="#3A322F"
+                    ></TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:textSize="24dp"
+                    android:layout_height="wrap_content"
+                    android:text="Life expectancy:"
+                    android:textColor="#3A322F"
+                    android:textStyle="bold"
+                    ></TextView>
+                <TextView
+                    android:id="@+id/textViewLifeExpectancy"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:textSize="24dp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="#3A322F"
+                    ></TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:textSize="24dp"
+                    android:layout_height="wrap_content"
+                    android:text="Hair type:"
+                    android:textColor="#3A322F"
+                    android:textStyle="bold"
+                    ></TextView>
+                <TextView
+                    android:id="@+id/textViewHairType"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:textSize="24dp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="#3A322F"
+                    ></TextView>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:textAlignment="center"
+                android:textSize="24dp"
+                android:layout_height="wrap_content"
+                android:text="Character:"
+                android:textColor="#6750A4"
+                android:layout_marginTop="25dp"
+                android:textStyle="bold"
+                ></TextView>
+
+            <TextView
+                android:id="@+id/textViewCharacter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textSize="24dp"
+                android:textColor="#3A322F"
+                android:text="Character"
+                android:layout_weight="1"
+                android:inputType="textMultiLine"
+                android:paddingHorizontal="20dp"></TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:textAlignment="center"
+                android:textSize="24dp"
+                android:layout_height="wrap_content"
+                android:text="Ideal for:"
+                android:textColor="#6750A4"
+                android:layout_marginTop="25dp"
+                android:textStyle="bold"
+                ></TextView>
+
+            <TextView
+                android:id="@+id/textViewIdealFor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textSize="24dp"
+                android:textColor="#3A322F"
+                android:text="Ideal for"
+                android:layout_weight="1"
+                android:inputType="textMultiLine"
+                android:paddingHorizontal="20dp"
+                android:paddingBottom="50dp"></TextView>
+
+        </LinearLayout>
+
+    </ScrollView>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline41"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.06" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline42"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.94" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
