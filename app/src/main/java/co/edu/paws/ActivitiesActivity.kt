@@ -11,12 +11,16 @@ class ActivitiesActivity : AppCompatActivity() {
         setContentView(R.layout.activity_activities)
 
         val btnVets = findViewById<Button>(R.id.btnVets)
+        val btnEvents = findViewById<Button>(R.id.btnEvents)
 
 
         btnVets.setOnClickListener{
                 val intent = Intent(this, VetActivity::class.java)
                 startActivity(intent)
         }
-
+        btnEvents.setOnClickListener{
+            val intent = Intent(this, EventsActivity::class.java)
+            startActivity(intent)
+        }
     }
 }

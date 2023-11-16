@@ -64,7 +64,7 @@ class VaccinesActivity : AppCompatActivity() {
                         val amount = document.getString("amount").toString()
 
 
-                        if(vaccine_id != null && vaccine_name !=null && pet_id != null && amount != null){
+                        if(vaccine_id != null && vaccine_name !=null && pet_id != null && amount != null && day != null && year != null && month != null){
                             val vaccine = Vaccine(vaccine_id,pet_id, vaccine_name, day, month, year, amount)
                             vaccinesList.add(vaccine)
                         }
